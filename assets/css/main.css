@@ -1,0 +1,313 @@
+:root{
+  --mazmas-red: #B51624;
+  --mazmas-deep-red: #7E101D;
+  --mazmas-gold: #F6BE58;
+  --mazmas-yellow: #FFD86B;
+  --mazmas-cream: #FFF7EA;
+  --mazmas-soft: #FBE8DE;
+  --mazmas-brown: #543120;
+  --mazmas-green: #66712C;
+  --mazmas-ink: #271915;
+  --mazmas-muted: #6f5a4f;
+  --mazmas-shadow: 0 1rem 2.5rem rgba(84, 49, 32, .12);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--mazmas-ink);
+  background:
+    radial-gradient(1000px 500px at 5% 0%, rgba(246,190,88,.18), transparent 60%),
+    linear-gradient(180deg, #fff, var(--mazmas-cream));
+}
+
+::selection{
+  background: var(--mazmas-gold);
+  color: var(--mazmas-deep-red);
+}
+
+a{
+  color: var(--mazmas-red);
+}
+
+.skip-link{
+  position: absolute;
+  left: -999px;
+  top: 1rem;
+  z-index: 2000;
+  background: #fff;
+  color: var(--mazmas-red);
+  padding: .75rem 1rem;
+  border-radius: .75rem;
+  box-shadow: var(--mazmas-shadow);
+}
+
+.skip-link:focus{
+  left: 1rem;
+}
+
+.pt-navbar{
+  padding-top: 90px;
+}
+
+.bg-mazmas{
+  background:
+    linear-gradient(90deg, var(--mazmas-deep-red), var(--mazmas-red)) !important;
+}
+
+.navbar{
+  box-shadow: 0 .5rem 1.25rem rgba(84, 49, 32, .12);
+}
+
+.navbar-brand{
+  min-width: 0;
+}
+
+.logo-mazmas{
+  height: 52px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+}
+
+.brand-tagline{
+  color: var(--mazmas-yellow);
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: .04em;
+  font-size: .9rem;
+  white-space: nowrap;
+}
+
+.navbar .nav-link{
+  font-weight: 700;
+  letter-spacing: .01em;
+  color: rgba(255,255,255,.88);
+  position: relative;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active{
+  color: var(--mazmas-yellow) !important;
+}
+
+.navbar .nav-link.active::after{
+  content: "";
+  position: absolute;
+  left: .5rem;
+  right: .5rem;
+  bottom: .15rem;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--mazmas-gold);
+}
+
+.btn-mazmas{
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--mazmas-red);
+  --bs-btn-border-color: var(--mazmas-red);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--mazmas-deep-red);
+  --bs-btn-hover-border-color: var(--mazmas-deep-red);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--mazmas-deep-red);
+  --bs-btn-active-border-color: var(--mazmas-deep-red);
+  box-shadow: 0 .5rem 1.25rem rgba(181,22,36,.18);
+}
+
+.btn-gold{
+  --bs-btn-color: var(--mazmas-deep-red);
+  --bs-btn-bg: var(--mazmas-gold);
+  --bs-btn-border-color: var(--mazmas-gold);
+  --bs-btn-hover-color: var(--mazmas-deep-red);
+  --bs-btn-hover-bg: var(--mazmas-yellow);
+  --bs-btn-hover-border-color: var(--mazmas-yellow);
+  --bs-btn-active-color: var(--mazmas-deep-red);
+  --bs-btn-active-bg: var(--mazmas-yellow);
+  --bs-btn-active-border-color: var(--mazmas-yellow);
+  font-weight: 800;
+}
+
+.btn-outline-mazmas{
+  --bs-btn-color: var(--mazmas-red);
+  --bs-btn-border-color: var(--mazmas-red);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--mazmas-red);
+  --bs-btn-hover-border-color: var(--mazmas-red);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--mazmas-red);
+  --bs-btn-active-border-color: var(--mazmas-red);
+  font-weight: 700;
+}
+
+.text-mazmas{ color: var(--mazmas-red) !important; }
+.text-gold{ color: var(--mazmas-gold) !important; }
+.text-brown{ color: var(--mazmas-brown) !important; }
+.bg-cream{ background: var(--mazmas-cream) !important; }
+.bg-soft{ background: var(--mazmas-soft) !important; }
+
+.section-eyebrow{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .4rem .8rem;
+  border-radius: 999px;
+  background: rgba(246,190,88,.22);
+  color: var(--mazmas-deep-red);
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  font-size: .78rem;
+}
+
+.section-title{
+  color: var(--mazmas-deep-red);
+  letter-spacing: -.03em;
+}
+
+.lead-soft{
+  color: var(--mazmas-muted);
+  line-height: 1.7;
+}
+
+.card-mazmas{
+  border: 1px solid rgba(181,22,36,.10);
+  border-radius: 1.35rem;
+  box-shadow: 0 .75rem 2rem rgba(84,49,32,.08);
+  overflow: hidden;
+  background: rgba(255,255,255,.88);
+  backdrop-filter: blur(6px);
+}
+
+.card-mazmas:hover{
+  transform: translateY(-4px);
+  box-shadow: var(--mazmas-shadow);
+}
+
+.card-mazmas{
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.img-cover{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ratio-product{
+  aspect-ratio: 4 / 3;
+}
+
+.pattern-bg{
+  background:
+    radial-gradient(900px 400px at 10% 10%, rgba(246,190,88,.18), transparent 60%),
+    linear-gradient(135deg, rgba(181,22,36,.05), rgba(255,247,234,.8)),
+    var(--mazmas-cream);
+}
+
+.pattern-red{
+  background:
+    radial-gradient(700px 320px at 85% 15%, rgba(246,190,88,.24), transparent 60%),
+    linear-gradient(135deg, var(--mazmas-deep-red), var(--mazmas-red));
+  color: #fff;
+}
+
+.pattern-red .lead-soft,
+.pattern-red .text-secondary{
+  color: rgba(255,247,234,.78) !important;
+}
+
+.badge-soft{
+  background: rgba(246,190,88,.18);
+  color: var(--mazmas-deep-red);
+  border: 1px solid rgba(246,190,88,.45);
+  padding: .48rem .75rem;
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.divider-maiz{
+  height: 7px;
+  width: min(190px, 45vw);
+  background: linear-gradient(90deg, var(--mazmas-red), var(--mazmas-gold));
+  border-radius: 999px;
+}
+
+.whatsapp-float{
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  z-index: 1035;
+}
+
+.call-strip{
+  background:
+    linear-gradient(90deg, rgba(84,49,32,.92), rgba(126,16,29,.92)),
+    var(--mazmas-brown);
+  color: #fff;
+}
+
+.footer-link{
+  color: rgba(255,247,234,.86);
+  text-decoration: none;
+}
+
+.footer-link:hover{
+  color: var(--mazmas-yellow);
+  text-decoration: underline;
+}
+
+.footer-address{
+  white-space: pre-line;
+  font-style: normal;
+  color: rgba(255,247,234,.82);
+}
+
+.cookie-banner{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1050;
+  border-radius: 0;
+  margin: 0;
+  background: rgba(39,25,21,.96);
+  color: #fff;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible{
+  outline: 3px solid var(--mazmas-gold);
+  outline-offset: 3px;
+}
+
+@media (max-width: 575.98px){
+  .pt-navbar{
+    padding-top: 82px;
+  }
+
+  .logo-mazmas{
+    height: 42px;
+    max-width: 145px;
+  }
+
+  .brand-tagline{
+    display: none;
+  }
+
+  .navbar .nav-link.active::after{
+    display: none;
+  }
+}

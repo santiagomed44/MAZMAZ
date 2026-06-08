@@ -1,0 +1,160 @@
+.hero-mazmas{
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(900px 420px at 4% 6%, rgba(246,190,88,.28), transparent 65%),
+    radial-gradient(850px 360px at 94% 20%, rgba(181,22,36,.12), transparent 60%),
+    linear-gradient(180deg, #fff, var(--mazmas-cream));
+}
+
+.hero-kicker{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  color: var(--mazmas-deep-red);
+  background: rgba(246,190,88,.20);
+  border: 1px solid rgba(246,190,88,.45);
+  border-radius: 999px;
+  padding: .55rem .9rem;
+  font-weight: 900;
+}
+
+.hero-title{
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: -.045em;
+  color: var(--mazmas-deep-red);
+}
+
+.hero-title span{
+  color: var(--mazmas-red);
+}
+
+.hero-card{
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: var(--mazmas-shadow);
+  border: 1px solid rgba(181,22,36,.10);
+}
+
+#carouselHeroMazmas .carousel-item img{
+  height: clamp(320px, 46vw, 560px);
+  object-fit: cover;
+}
+
+#carouselHeroMazmas .carousel-caption{
+  background: linear-gradient(90deg, rgba(126,16,29,.88), rgba(84,49,32,.65));
+  border-radius: 1rem;
+  padding: .9rem 1rem;
+  left: 7%;
+  right: 7%;
+  bottom: 1.25rem;
+  text-align: left;
+}
+
+#carouselHeroMazmas .carousel-indicators [data-bs-target]{
+  background-color: var(--mazmas-gold);
+}
+
+.hero-stats{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .75rem;
+}
+
+.stat-pill{
+  background: #fff;
+  border: 1px solid rgba(181,22,36,.10);
+  border-radius: 1rem;
+  padding: .8rem;
+  box-shadow: 0 .45rem 1.1rem rgba(84,49,32,.06);
+}
+
+.stat-pill strong{
+  display: block;
+  color: var(--mazmas-red);
+  font-size: 1.05rem;
+}
+
+.product-card img{
+  height: 230px;
+  object-fit: cover;
+}
+
+.product-card .card-body{
+  min-height: 220px;
+}
+
+.star-section{
+  position: relative;
+  overflow: hidden;
+}
+
+.star-section::before{
+  content: "";
+  position: absolute;
+  inset: auto -90px -150px auto;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(246,190,88,.24), transparent 65%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.tradition-box{
+  background:
+    linear-gradient(0deg, rgba(255,247,234,.90), rgba(255,247,234,.90)),
+    url("../img/blog-maiz.jpg") center/cover;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.testimonial-card{
+  min-height: 260px;
+  border-left: 6px solid var(--mazmas-gold);
+}
+
+.testimonial-quote{
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+  line-height: 1.55;
+  color: var(--mazmas-brown);
+}
+
+.pet-card{
+  background:
+    linear-gradient(135deg, rgba(102,113,44,.10), rgba(246,190,88,.12)),
+    #fff;
+}
+
+.blog-preview-img{
+  height: 210px;
+  object-fit: cover;
+}
+
+.location-panel{
+  background:
+    linear-gradient(135deg, rgba(181,22,36,.94), rgba(126,16,29,.94)),
+    var(--mazmas-red);
+  color: #fff;
+  border-radius: 2rem;
+}
+
+@media (max-width: 767.98px){
+  .hero-stats{
+    grid-template-columns: 1fr;
+  }
+
+  #carouselHeroMazmas .carousel-item img{
+    height: 320px;
+  }
+
+  #carouselHeroMazmas .carousel-caption{
+    position: static;
+    border-radius: 0;
+  }
+
+  .product-card .card-body{
+    min-height: auto;
+  }
+}

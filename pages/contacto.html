@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | MazMas Cultura Paisa</title>
+  <meta name="description" content="Contacta a MazMas Cultura Paisa por WhatsApp, visita el local en Itagüí o cotiza refrigerios empresariales.">
+  <meta property="og:title" content="Contacto MazMas Cultura Paisa">
+  <meta property="og:description" content="Pide por WhatsApp, consulta ubicación y cotiza tus refrigerios empresariales.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../assets/img/fachada-local.jpg">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/contacto.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+<header class="border-bottom">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-mazmas fixed-top" aria-label="Barra de navegación principal">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="../index.html" title="Ir al inicio">
+        <img src="../assets/img/logo-mazmas-transparente.png" alt="Logo de MazMas Cultura Paisa" class="logo-mazmas" loading="eager">
+        <span class="brand-tagline">Cultura Paisa</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+        aria-controls="navMain" aria-expanded="false" aria-label="Mostrar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navMain" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link " href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link " href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link " href="blog.html">Blog paisa</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <a class="btn btn-gold btn-sm rounded-pill px-3" href="https://wa.me/573146077201?text=Hola%20MazMas%2C%20quiero%20hacer%20un%20pedido." target="_blank" rel="noopener">
+              <i class="bi bi-whatsapp me-1" aria-hidden="true"></i> Pedir
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="contenido" class="pt-navbar">
+  <section class="contact-hero py-5">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="section-eyebrow mb-3">Contacto</span>
+          <h1 class="display-5 fw-bold section-title">Pide, cotiza o ven por el sabor de lo nuestro</h1>
+          <p class="lead lead-soft mb-4">Escríbenos por WhatsApp para domicilios, productos disponibles, litros familiares o refrigerios empresariales.</p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-mazmas btn-lg rounded-pill" href="https://wa.me/573146077201?text=Hola%20MazMas%2C%20quiero%20hacer%20un%20pedido." target="_blank" rel="noopener">
+              <i class="bi bi-whatsapp me-2"></i>WhatsApp
+            </a>
+            <a class="btn btn-outline-mazmas btn-lg rounded-pill" href="#ubicacion">Ver ubicación</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <img src="../assets/img/Local 2.jpg" alt="Fachada de MazMas Cultura Paisa en Itagüí" class="img-fluid rounded-5 shadow" loading="eager">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-6">
+          <div class="contact-card p-4 p-lg-5">
+            <h2 class="h3 fw-bold section-title mb-3">Escríbenos</h2>
+            <p class="text-secondary">Al enviar el formulario se abrirá WhatsApp con el mensaje listo para confirmar tu pedido o cotización.</p>
+
+            <form id="form-contacto" class="row g-3 needs-validation" novalidate>
+              <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre completo</label>
+                <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Ej. Laura Pérez" required>
+                <div class="invalid-feedback">Ingresa tu nombre.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="telefono" class="form-label">Celular</label>
+                <input class="form-control" type="tel" id="telefono" name="telefono" placeholder="Ej. 300 000 0000" pattern="^[0-9+()\-\s]{7,20}$" required>
+                <div class="invalid-feedback">Ingresa un celular válido.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="tipoPedido" class="form-label">Tipo de solicitud</label>
+                <select id="tipoPedido" class="form-select" required>
+                  <option value="" selected disabled>Selecciona...</option>
+                  <option>Pedido personal</option>
+                  <option>Domicilio</option>
+                  <option>Litro familiar</option>
+                  <option>Refrigerio empresarial</option>
+                  <option>Evento o reunión</option>
+                  <option>Otro</option>
+                </select>
+                <div class="invalid-feedback">Selecciona una opción.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="cantidad" class="form-label">Cantidad aproximada</label>
+                <input class="form-control" type="text" id="cantidad" name="cantidad" placeholder="Ej. 20 vasos / 3 litros">
+              </div>
+              <div class="col-md-6">
+                <label for="fechaPedido" class="form-label">Fecha estimada</label>
+                <input class="form-control" type="date" id="fechaPedido" name="fechaPedido">
+              </div>
+              <div class="col-md-6">
+                <label for="productoInteres" class="form-label">Producto de interés</label>
+                <select id="productoInteres" class="form-select">
+                  <option selected>Mazamorra pilada</option>
+                  <option>Claro de maíz</option>
+                  <option>Arroz con leche</option>
+                  <option>Salpicón con helado</option>
+                  <option>Obleas / Solteritas</option>
+                  <option>Dulces típicos</option>
+                  <option>Varios productos</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="5" placeholder="Cuéntanos qué necesitas, para cuándo y si es para empresa, casa o evento." required></textarea>
+                <div class="invalid-feedback">Escribe tu mensaje.</div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="acepto" required>
+                  <label class="form-check-label" for="acepto">Acepto ser contactado por MazMas para responder mi solicitud.</label>
+                  <div class="invalid-feedback">Debes aceptar para continuar.</div>
+                </div>
+              </div>
+              <div class="col-12 d-flex justify-content-end gap-2">
+                <a class="btn btn-outline-mazmas rounded-pill" href="tel:+573146077201">Llamar</a>
+                <button type="submit" class="btn btn-mazmas rounded-pill">Enviar por WhatsApp</button>
+              </div>
+            </form>
+            <div id="alert-ok" class="alert alert-success mt-3 d-none" role="status">Listo. Se abrirá WhatsApp con tu mensaje.</div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="row g-3 mb-4">
+            <div class="col-md-6">
+              <div class="quick-contact h-100">
+                <i class="bi bi-whatsapp"></i>
+                <div><h3 class="h6 fw-bold mb-1">WhatsApp</h3><a href="https://wa.me/573146077201" target="_blank" rel="noopener">314 607 7201</a></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="quick-contact h-100">
+                <i class="bi bi-instagram"></i>
+                <div><h3 class="h6 fw-bold mb-1">Instagram</h3><a href="https://www.instagram.com/mazmasculturapaisa/" target="_blank" rel="noopener">@mazmasculturapaisa</a></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="quick-contact">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div>
+                  <h3 class="h6 fw-bold mb-1">Dirección</h3>
+                  <p class="mb-2">Cra 50 #75A-24, Edificio La Fe, Barrio El Carmelo, Itagüí.</p>
+                  <button class="btn btn-sm btn-outline-mazmas rounded-pill" data-copy="Cra 50 #75A-24, Edificio La Fe, Barrio El Carmelo, Itagüí">Copiar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="ubicacion" class="contact-card overflow-hidden">
+            <div class="ratio ratio-4x3">
+              <iframe class="map-frame" title="Ubicación de MazMas Cultura Paisa en Itagüí" src="https://www.google.com/maps?q=Cra%2050%2075A%2024%20Edificio%20La%20Fe%20Itag%C3%BC%C3%AD%20Antioquia&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="social-card p-4 mt-4">
+            <h3 class="h5 fw-bold text-mazmas">Atención cercana y sabor de casa</h3>
+            <p class="mb-0 text-secondary">También puedes escribirnos para conocer disponibilidad del día, pedir recomendación o programar refrigerios con anticipación.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="toastInfo" class="toast" role="status" aria-live="polite" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">Respuesta por WhatsApp según disponibilidad del equipo MazMas.</div>
+      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Cerrar"></button>
+    </div>
+  </div>
+</div>
+
+<a href="https://wa.me/573146077201?text=Hola%20MazMas%2C%20quiero%20hacer%20un%20pedido." 
+  class="btn btn-success rounded-circle shadow position-fixed end-0 bottom-0 m-4 whatsapp-float"
+  target="_blank" rel="noopener" aria-label="Escribir a MazMas por WhatsApp">
+  <i class="bi bi-whatsapp" aria-hidden="true"></i>
+</a>
+
+<div id="cookieBanner" class="cookie-banner alert" role="alert" aria-label="Aviso de cookies">
+  <div class="container d-flex flex-wrap align-items-center justify-content-between gap-3">
+    <p class="mb-0 small">Usamos cookies básicas para mejorar tu experiencia y recordar tus preferencias.</p>
+    <div class="d-flex gap-2">
+      <button id="btnCookiesAceptar" class="btn btn-light btn-sm" type="button">Aceptar</button>
+      <button id="btnCookiesRechazar" class="btn btn-outline-light btn-sm" type="button">Rechazar</button>
+    </div>
+  </div>
+</div>
+
+<footer class="py-5 bg-mazmas text-light mt-auto">
+  <div class="container">
+    <div class="row gy-4 align-items-start">
+      <div class="col-lg-4">
+        <img src="../assets/img/logo-mazmas-transparente.png" alt="MazMas Cultura Paisa" class="logo-mazmas mb-3" loading="lazy">
+        <p class="mb-3 small text-white-50">Mazamorra pilada, claro, salpicón, arroz con leche, obleas, helados y dulces típicos antioqueños.</p>
+        <div class="d-flex gap-2">
+          <a class="btn btn-gold btn-sm rounded-pill" href="https://wa.me/573146077201" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-outline-light btn-sm rounded-pill" href="https://www.instagram.com/mazmasculturapaisa/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h2 class="h6 fw-bold text-gold">Navegación</h2>
+        <ul class="list-unstyled small mb-0">
+          <li><a class="footer-link" href="../index.html">Inicio</a></li>
+          <li><a class="footer-link" href="servicios.html">Servicios</a></li>
+          <li><a class="footer-link" href="blog.html">Blog paisa</a></li>
+          <li><a class="footer-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h2 class="h6 fw-bold text-gold">Productos</h2>
+        <ul class="list-unstyled small mb-0">
+          <li>Mazamorra pilada</li>
+          <li>Claro de maíz</li>
+          <li>Salpicón con helado</li>
+          <li>Dulces típicos</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h2 class="h6 fw-bold text-gold">Contacto</h2>
+        <address class="footer-address small mb-0">Cra 50 #75A-24, Edificio La Fe
+Barrio El Carmelo, Itagüí
+WhatsApp: 314 607 7201
+Instagram: @mazmasculturapaisa</address>
+      </div>
+    </div>
+    <hr class="border-light opacity-25 my-4">
+    <p class="small mb-0 text-white-50">&copy; <span id="year"></span> MazMas Cultura Paisa. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/contacto.js"></script>
+</body>
+</html>

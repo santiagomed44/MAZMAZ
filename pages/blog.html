@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog paisa | MazMas Cultura Paisa</title>
+  <meta name="description" content="Historias paisas, cultura montañera, tradición antioqueña, maíz, mazamorra y notas de MazMas Cultura Paisa.">
+
+  <meta property="og:title" content="Blog paisa MazMas Cultura Paisa">
+  <meta property="og:description" content="Historias montañeras, sabores de Antioquia y tradición paisa.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../assets/img/blog-abuela.jpg">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/blog.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+<a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+<header class="border-bottom">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-mazmas fixed-top" aria-label="Barra de navegación principal">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="../index.html" title="Ir al inicio">
+        <img src="../assets/img/logo-mazmas-transparente.png" alt="Logo de MazMas Cultura Paisa" class="logo-mazmas" loading="eager">
+        <span class="brand-tagline">Cultura Paisa</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+        aria-controls="navMain" aria-expanded="false" aria-label="Mostrar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="navMain" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="blog.html">Blog paisa</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <a class="btn btn-gold btn-sm rounded-pill px-3"
+               href="https://wa.me/573146077201?text=Hola%20MazMas%2C%20quiero%20hacer%20un%20pedido."
+               target="_blank" rel="noopener">
+              <i class="bi bi-whatsapp me-1" aria-hidden="true"></i> Pedir
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="contenido" class="pt-navbar">
+
+  <!-- HERO BLOG -->
+  <section class="blog-hero py-5">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="section-eyebrow mb-3">Blog paisa</span>
+          <h1 class="display-5 fw-bold section-title">
+            Historias montañeras, sabores de antaño y notas que saben a hogar
+          </h1>
+          <p class="lead lead-soft">
+            Un espacio para mantener viva la cultura paisa: maíz, abuelos, dichos populares,
+            dulces típicos y la memoria que se sirve en cada producto MazMas.
+          </p>
+        </div>
+
+        <div class="col-lg-5">
+          <img src="../assets/img/Dichos.png"
+               alt="Historia paisa inspirada en la cocina de los abuelos"
+               class="img-fluid rounded-5 shadow blog-hero-img"
+               loading="eager">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTROS Y TARJETAS -->
+  <section class="py-5 blog-section">
+    <div class="container">
+
+      <div class="d-flex flex-wrap gap-2 justify-content-center mb-5" aria-label="Filtros del blog">
+        <button class="btn btn-outline-mazmas rounded-pill filter-btn active" data-filter="todos" type="button">Todos</button>
+        <button class="btn btn-outline-mazmas rounded-pill filter-btn" data-filter="historias" type="button">Historias paisas</button>
+        <button class="btn btn-outline-mazmas rounded-pill filter-btn" data-filter="sabores" type="button">Sabores</button>
+        <button class="btn btn-outline-mazmas rounded-pill filter-btn" data-filter="cultura" type="button">Cultura montañera</button>
+        <button class="btn btn-outline-mazmas rounded-pill filter-btn" data-filter="mazmas" type="button">Notas MazMas</button>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- HISTORIA 1 -->
+        <div class="col-md-6 col-xl-4" data-category="sabores">
+          <article class="post-card">
+            <img src="../assets/img/Maiz.png" alt="Maíz como símbolo de tradición paisa" loading="lazy">
+
+            <div class="post-card-body">
+              <p class="post-category">Sabores de Antioquia</p>
+              <h2>El maíz: raíz de nuestra mesa</h2>
+              <p class="post-excerpt">
+                Una mirada sencilla al ingrediente que inspira la mazamorra, el claro y tantas preparaciones tradicionales.
+              </p>
+
+              <button class="btn btn-outline-mazmas rounded-pill"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#historiaMaiz"
+                      aria-expanded="false"
+                      aria-controls="historiaMaiz">
+                Leer historia
+              </button>
+
+              <div class="collapse mt-3" id="historiaMaiz">
+                <div class="story-mini">
+                  <p>
+                    El maíz ha acompañado por generaciones muchas preparaciones de la cocina antioqueña.
+                    En MazMas lo vemos como un símbolo de origen: de la tierra, de la casa, de la mesa familiar
+                    y de esos sabores que se aprenden mirando a los abuelos cocinar.
+                  </p>
+                  <p>
+                    Por eso la mazamorra y el claro no son solo productos. Son una forma de recordar que lo sencillo
+                    también puede ser profundamente especial.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- HISTORIA 2 -->
+        <div class="col-md-6 col-xl-4" data-category="cultura">
+          <article class="post-card">
+            <img src="../assets/img/Abuelo.png" alt="Dichos paisas y refranes de abuela" loading="lazy">
+
+            <div class="post-card-body">
+              <p class="post-category">Cultura montañera</p>
+              <h2>Dichos paisas que escuchábamos de los abuelos</h2>
+              <p class="post-excerpt">
+                Frases cortas que guardan humor, consejo y sabiduría popular.
+              </p>
+
+              <button class="btn btn-outline-mazmas rounded-pill"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#historiaRefranes"
+                      aria-expanded="false"
+                      aria-controls="historiaRefranes">
+                Leer historia
+              </button>
+
+              <div class="collapse mt-3" id="historiaRefranes">
+                <div class="story-mini">
+                  <p>
+                    Los dichos populares tienen algo bonito: resumen la vida en pocas palabras.
+                    “A mal tiempo, buena cara”, “camarón que se duerme, se lo lleva la corriente”
+                    o “en casa de herrero, cuchillo de palo” son frases que muchos escuchamos en familia.
+                  </p>
+                  <p>
+                    En MazMas nos gusta recordarlos porque también hacen parte de la cultura:
+                    la que se conversa, se repite, se comparte y se queda.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- HISTORIA 3 -->
+        <div class="col-md-6 col-xl-4" data-category="historias">
+          <article class="post-card">
+            <img src="../assets/img/Mazamorra 3.png" alt="Mazamorra y tradición familiar paisa" loading="lazy">
+
+            <div class="post-card-body">
+              <p class="post-category">Historias paisas</p>
+              <h2>La mazamorra y la memoria familiar</h2>
+              <p class="post-excerpt">
+                Hay sabores que no se olvidan porque estuvieron presentes en la mesa de la casa.
+              </p>
+
+              <button class="btn btn-outline-mazmas rounded-pill"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#historiaMazamorra"
+                      aria-expanded="false"
+                      aria-controls="historiaMazamorra">
+                Leer historia
+              </button>
+
+              <div class="collapse mt-3" id="historiaMazamorra">
+                <div class="story-mini">
+                  <p>
+                    Hay alimentos que se quedan en la memoria porque aparecen en momentos simples:
+                    una tarde en casa, una visita a la abuela, una conversación después del almuerzo
+                    o un antojo compartido.
+                  </p>
+                  <p>
+                    La mazamorra tiene esa fuerza: no necesita ser complicada para emocionar.
+                    Su valor está en lo que representa: familia, tradición, calma y sabor de lo nuestro.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- HISTORIA 4 -->
+        <div class="col-md-6 col-xl-4" data-category="mazmas">
+          <article class="post-card">
+            <img src="../assets/img/Oblea.png" alt="Refrigerios empresariales con tradición paisa" loading="lazy">
+
+            <div class="post-card-body">
+              <p class="post-category">Notas MazMas</p>
+              <h2>Refrigerios con sabor paisa</h2>
+              <p class="post-excerpt">
+                Una forma diferente de compartir en empresas, colegios y eventos.
+              </p>
+
+              <button class="btn btn-outline-mazmas rounded-pill"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#historiaRefrigerios"
+                      aria-expanded="false"
+                      aria-controls="historiaRefrigerios">
+                Leer nota
+              </button>
+
+              <div class="collapse mt-3" id="historiaRefrigerios">
+                <div class="story-mini">
+                  <p>
+                    Un refrigerio empresarial no tiene por qué ser igual a todos. Con mazamorra,
+                    arroz con leche, salpicón, claro y dulces típicos, una empresa puede ofrecer
+                    un momento diferente, cercano y con identidad local.
+                  </p>
+                  <p>
+                    En MazMas queremos que cada pedido para empresas también cuente una historia:
+                    la de una Antioquia que comparte, trabaja y celebra alrededor de la comida.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- HISTORIA 5 -->
+        <div class="col-md-6 col-xl-4" data-category="sabores">
+          <article class="post-card">
+            <img src="../assets/img/Dulces 2.png" alt="Pionono y dulces tradicionales" loading="lazy">
+
+            <div class="post-card-body">
+              <p class="post-category">Sabores de Antioquia</p>
+              <h2>Dulces típicos que no deberían desaparecer</h2>
+              <p class="post-excerpt">
+                Obleas, solteritas, bocadillos, panelitas y otras delicias que cuentan historias.
+              </p>
+
+              <button class="btn btn-outline-mazmas rounded-pill"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#historiaDulces"
+                      aria-expanded="false"
+                      aria-controls="historiaDulces">
+                Leer historia
+              </button>
+
+              <div class="collapse mt-3" id="historiaDulces">
+                <div class="story-mini">
+                  <p>
+                    Los dulces típicos son pequeños tesoros de la memoria: obleas, solteritas,
+                    bocadillos, panelitas, manjar blanco, cocadas y muchas delicias más.
+                  </p>
+                  <p>
+                    Cada uno tiene una forma particular de recordarnos paseos, tiendas, pueblos
+                    y tardes de antojo. Por eso en MazMas los ofrecemos como parte de nuestra misión:
+                    mantener viva la cultura paisa desde el sabor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- HISTORIA 6 -->
+        <div class="col-md-6 col-xl-4" data-category="mazmas">
+          <article class="post-card">
+            <img src="../assets/img/Pet.png" alt="MazMas Pet Friendly" loading="lazy">
+
+            <div class="post-card-body">
+              <p class="post-category">Notas MazMas</p>
+              <h2>MazMas Pet Friendly</h2>
+              <p class="post-excerpt">
+                Porque la tradición también se vive en familia, y para muchos la familia incluye peluditos.
+              </p>
+
+              <button class="btn btn-outline-mazmas rounded-pill"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#historiaPet"
+                      aria-expanded="false"
+                      aria-controls="historiaPet">
+                Leer nota
+              </button>
+
+              <div class="collapse mt-3" id="historiaPet">
+                <div class="story-mini">
+                  <p>
+                    La tradición se disfruta mejor cuando se comparte. Para muchas personas,
+                    salir por un antojo también significa salir con su mascota.
+                  </p>
+                  <p>
+                    Por eso MazMas comunica una experiencia cercana, amable y Pet Friendly.
+                    Queremos que visitarnos se sienta como llegar a un lugar de confianza:
+                    con sabor, buena atención y cariño por la familia completa.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LLAMADO A LA ACCIÓN -->
+  <section class="py-5 call-strip">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <h2 class="h1 fw-bold">Después de leer una historia, ven por una mazamorra</h2>
+          <p class="mb-0 text-white-50">La cultura también se saborea. Te esperamos en Itagüí.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a class="btn btn-gold btn-lg rounded-pill" href="contacto.html">Visítanos o pide</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<a href="https://wa.me/573146077201?text=Hola%20MazMas%2C%20quiero%20hacer%20un%20pedido."
+   class="btn btn-success rounded-circle shadow position-fixed end-0 bottom-0 m-4 whatsapp-float"
+   target="_blank" rel="noopener" aria-label="Escribir a MazMas por WhatsApp">
+  <i class="bi bi-whatsapp" aria-hidden="true"></i>
+</a>
+
+<div id="cookieBanner" class="cookie-banner alert" role="alert" aria-label="Aviso de cookies">
+  <div class="container d-flex flex-wrap align-items-center justify-content-between gap-3">
+    <p class="mb-0 small">Usamos cookies básicas para mejorar tu experiencia y recordar tus preferencias.</p>
+    <div class="d-flex gap-2">
+      <button id="btnCookiesAceptar" class="btn btn-light btn-sm" type="button">Aceptar</button>
+      <button id="btnCookiesRechazar" class="btn btn-outline-light btn-sm" type="button">Rechazar</button>
+    </div>
+  </div>
+</div>
+
+<footer class="py-5 bg-mazmas text-light mt-auto">
+  <div class="container">
+    <div class="row gy-4 align-items-start">
+      <div class="col-lg-4">
+        <img src="../assets/img/logo-mazmas-transparente.png" alt="MazMas Cultura Paisa" class="logo-mazmas mb-3" loading="lazy">
+        <p class="mb-3 small text-white-50">
+          Mazamorra pilada, claro, salpicón, arroz con leche, obleas, helados y dulces típicos antioqueños.
+        </p>
+        <div class="d-flex gap-2">
+          <a class="btn btn-gold btn-sm rounded-pill" href="https://wa.me/573146077201" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-outline-light btn-sm rounded-pill" href="https://www.instagram.com/mazmasculturapaisa/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-2">
+        <h2 class="h6 fw-bold text-gold">Navegación</h2>
+        <ul class="list-unstyled small mb-0">
+          <li><a class="footer-link" href="../index.html">Inicio</a></li>
+          <li><a class="footer-link" href="servicios.html">Servicios</a></li>
+          <li><a class="footer-link" href="blog.html">Blog paisa</a></li>
+          <li><a class="footer-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <h2 class="h6 fw-bold text-gold">Productos</h2>
+        <ul class="list-unstyled small mb-0">
+          <li>Mazamorra pilada</li>
+          <li>Claro de maíz</li>
+          <li>Salpicón con helado</li>
+          <li>Dulces típicos</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3">
+        <h2 class="h6 fw-bold text-gold">Contacto</h2>
+        <address class="footer-address small mb-0">Cra 50 #75A-24, Edificio La Fe
+Barrio El Carmelo, Itagüí
+WhatsApp: 314 607 7201
+Instagram: @mazmasculturapaisa</address>
+      </div>
+    </div>
+
+    <hr class="border-light opacity-25 my-4">
+    <p class="small mb-0 text-white-50">&copy; <span id="year"></span> MazMas Cultura Paisa. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/blog.js"></script>
+</body>
+</html>
