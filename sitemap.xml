@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://www.mazmas.com/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.mazmas.com/pages/servicios.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://www.mazmas.com/pages/contacto.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://www.mazmas.com/pages/blog.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+</urlset>
