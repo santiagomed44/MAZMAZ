@@ -119,10 +119,23 @@
 
 /* CTA final */
 .call-strip{
-  background:
-    linear-gradient(135deg, rgba(122, 25, 20, .96), rgba(166, 13, 31, .96)),
-    var(--mazmas-red-dark);
+  background: var(--mazmas-red-dark);
   color: #fff;
+}
+
+.call-strip h2{
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+
+.call-strip p{
+  color: #ffe8b0 !important;
+  font-weight: 600;
+}
+
+.call-strip .btn-gold{
+  color: var(--mazmas-red-dark);
+  font-weight: 900;
 }
 
 /* Responsive */

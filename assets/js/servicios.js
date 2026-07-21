@@ -1,5 +1,5 @@
 (() => {
-  const phone = "573146077201";
+  const phone = "573205466172";
   const buttons = document.querySelectorAll("[data-producto]");
 
   buttons.forEach((btn) => {

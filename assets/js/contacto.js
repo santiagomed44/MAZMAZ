@@ -1,7 +1,7 @@
 (() => {
   const form = document.getElementById("form-contacto");
   const alertOk = document.getElementById("alert-ok");
-  const phone = "573146077201";
+  const phone = "573205466172";
 
   function buildWhatsAppMessage(){
     const nombre = document.getElementById("nombre").value.trim();
